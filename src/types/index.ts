@@ -154,7 +154,9 @@ export interface EmailTemplate {
   category: string;
   tags: string[];
   createdAt: string;
-  updatedAt: string;
+  updatedAt?: string;
+  isActive?: boolean;
+  usageCount?: number;
 }
 
 export interface AutomationWorkflow {
@@ -221,10 +223,11 @@ export interface Job {
 
 export interface Notification {
   id: string;
-  type: 'lead' | 'deal' | 'email' | 'meeting' | 'system' | 'ai';
+  type: string;
   title: string;
   message: string;
-  read: boolean;
+  read?: boolean;
+  isRead?: boolean;
   createdAt: string;
   link?: string;
 }
@@ -261,10 +264,10 @@ export interface ChatMessage {
 export interface MediaFile {
   id: string;
   name: string;
-  type: 'image' | 'video' | 'document';
+  type: string;
   size: number;
   url: string;
-  folder: string;
+  folder?: string;
   uploadedAt: string;
   uploadedBy: string;
 }
