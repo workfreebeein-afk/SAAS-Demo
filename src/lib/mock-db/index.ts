@@ -364,3 +364,33 @@ export const MOCK_MEDIA = [
   { id: "m5", name: "BFSI_Case_Study.pdf", type: "pdf", size: 1536000, uploadedAt: "2026-07-05", uploadedBy: "u2", url: "/uploads/BFSI_Case_Study.pdf" },
   { id: "m6", name: "Healthcare_ROI_Report.pdf", type: "pdf", size: 1024000, uploadedAt: "2026-07-08", uploadedBy: "u4", url: "/uploads/Healthcare_ROI_Report.pdf" },
 ];
+
+export const AI_CHAT_RESPONSES = {
+  pricing: [
+    "Our Enterprise plan starts at ₹99,000/month (billed annually). It includes unlimited users, AI email generation, and full WhatsApp integration. Would you like a detailed breakdown?",
+    "Pricing depends on the number of active pipelines and AI requests. For a standard team of 10, it's roughly ₹1,50,000/month. Shall I generate a custom quotation for you?",
+  ],
+  moq: [
+    "We have no minimum order quantity, but the minimum contract term for Enterprise features is 12 months.",
+    "You can start with just 1 user license for ₹9,999/month on the Core plan."
+  ],
+  catalogue: [
+    "You can view all our feature modules under the 'Products' tab. Our flagship offerings are the Sales CRM, Marketing Automation, and Customer Success platform."
+  ],
+  meeting: [
+    "I'd be happy to arrange a meeting. Does next Tuesday at 11:00 AM IST work for you? Or would you prefer a different time?",
+    "Let's get that scheduled! Here is a link to my calendar: jcscrm.com/book-demo. Pick a slot that works for you!"
+  ],
+  quotation: [
+    "I can certainly help with that. Could you confirm how many user licenses you need and whether you want the WhatsApp integration enabled?"
+  ],
+  follow_up: [
+    "Noted. I'll make sure an account executive follows up with you within 24 hours to discuss this further."
+  ],
+  default: [
+    "That's an interesting question. Could you provide a bit more context so I can give you the most accurate answer?",
+    "I'm checking my knowledge base for that... While I do that, is there anything else regarding lead generation or pipelines I can help with?",
+    "I'm an AI assistant, and I'm continuously learning. Let me route this query to our human support team for a more detailed answer."
+  ]
+};
+
