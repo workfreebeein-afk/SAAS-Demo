@@ -393,4 +393,3 @@ export const AI_CHAT_RESPONSES = {
     "I'm an AI assistant, and I'm continuously learning. Let me route this query to our human support team for a more detailed answer."
   ]
 };
-
